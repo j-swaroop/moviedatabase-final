@@ -55,7 +55,7 @@ class Home extends Component {
     const disabledBtn = pageNo <= 1 ? 'disabled-btn' : ''
     return (
       <>
-        <p className="pageno"> Page No: {pageNo} </p>
+        <p className="pageno"> {pageNo} </p>
         <ul className="movies-list">
           {homeData.map(item => (
             <Movie details={item} key={item.id} />
